@@ -178,7 +178,7 @@ The process of identifying and removing errors from a program is called _debuggi
 
 Our bug was fixed, the code ran and we got a result we were expecting. As a programmer you will see such kind of errors on daily basis. It is good to know how to debug. To be good at debugging you should understand what kind of errors you are facing. Some of the Python errors you may encounter are _SyntaxError_, _IndexError_, _NameError_, _ModuleNotFoundError_, _KeyError_, _ImportError_, _AttributeError_, _TypeError_, _ValueError_, _ZeroDivisionError_ etc. We will see more about different Python **_error types_** in later sections.
 
-Let us practice more how to use Python interactive shell. Go to your terminal or command prompt and write the word **python**.
+Let us practice more on how to use the Python interactive shell. Go to your terminal or command prompt and write the word **python**.
 
 ![Python Scripting Shell](./images/opening_python_shell.png)
 

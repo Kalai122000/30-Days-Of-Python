@@ -256,6 +256,12 @@ An indentation is a white space in a text. Indentation in many languages is used
 
 ![Indentation Error](./images/indentation.png)
 
+### Formatted Strings
+In order to print or use strings that require a lot of variables or constants, you can use place f before the double quotes and wrap the name of the variables or constants in braces {} thus reducing the need for concatenating strings.
+
+**Example: Multi-variable String** 
+fav_food="rice", age=14, name="Asabenah"
+string=f"My name is {name}, I'm {age} and I adore {fav_food}"
 ### Comments
 
 Comments play a crucial role in enhancing code readability and allowing developers to leave notes within their code. In Python, any text preceded by a hash (#) symbol is considered a comment and is not executed when the code runs.

@@ -238,11 +238,11 @@ Enter number two: 3
    
 ```py
         person={
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Kalai',
+    'last_name': 'Marshall',
     'age': 250,
-    'country': 'Finland',
-    'is_marred': True,
+    'country': 'India',
+    'is_marred': False,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': 'Space street',
@@ -257,7 +257,7 @@ Enter number two: 3
      * If the person is married and if he lives in Finland, print the information in the following format:
 
 ```py
-    Asabeneh Yetayeh lives in Finland. He is married.
+    Kalai Marshall lives in India. He is not married.
 ```
 
 🎉 CONGRATULATIONS ! 🎉

@@ -1,6 +1,5 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 10 - Loops</h1>
-[<< Day 9](../09_Day_Conditionals/09_conditionals.md) | [Day 11 >>](../11_Day_Functions/11_functions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 

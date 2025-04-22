@@ -25,7 +25,7 @@ first_name = 'Kalai'
 last_name = 'Marshall'
 space = ' '
 full_name = first_name  +  space + last_name
-print(full_name) # Asabeneh Yetayeh
+print(full_name) # Kalai Marshall
 # Checking length of a string using len() builtin function
 print(len(first_name))  # 8
 print(len(last_name))   # 7
@@ -123,7 +123,7 @@ last_name = 'Marshall'
 job = 'Trainer'
 country = 'India'
 sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
-print(sentence) # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+print(sentence) # I am Kalai Marshall. I am a Trainer. I live in India.
 
 radius = 10
 pi = 3.14

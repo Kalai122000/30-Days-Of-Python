@@ -30,16 +30,6 @@ Let us open the Python shell and start using some of the most common built-in fu
 
 ![Built-in functions](../images/builtin-functions_practice.png)
 
-Let us practice more by using different built-in functions
-
-![Help and Dir Built in Functions](../images/help_and_dir_builtin.png)
-
-As you can see from the terminal above, Python has got reserved words. We do not use reserved words to declare variables or functions. We will cover variables in the next section.
-
-I believe, by now you are familiar with built-in functions. Let us do one more practice of built-in functions and we will move on to the next section.
-
-![Min Max Sum](../images/builtin-functional-final.png)
-
 ## Variables
 
 Variables store data in a computer memory. Mnemonic variables are recommended to use in many programming languages. A mnemonic variable is a variable name that can be easily remembered and associated. A variable refers to a memory address in which data is stored.

@@ -10,19 +10,19 @@ sentence = "I hope you are enjoying 30 days of python challenge"
 print(sentence)
 
 # Multiline String
-multiline_string = '''I am a teacher and enjoy teaching.
+multiline_string = '''I am a trainer and enjoy training to people.
 I didn't find anything as rewarding as empowering people.
 That is why I created 30 days of python.'''
 print(multiline_string)
 # Another way of doing the same thing
-multiline_string = """I am a teacher and enjoy teaching.
+multiline_string = """I am a trainer and enjoy training to people.
 I didn't find anything as rewarding as empowering people.
 That is why I created 30 days of python."""
 print(multiline_string)
 
 # String Concatenation
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Kalai'
+last_name = 'Marshall'
 space = ' '
 full_name = first_name  +  space + last_name
 print(full_name) # Asabeneh Yetayeh
@@ -118,10 +118,10 @@ print(challenge.find('y'))  # 5
 print(challenge.find('th')) # 0
 
 # format()	formats string into nicer output    
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-job = 'teacher'
-country = 'Finland'
+first_name = 'Kalai'
+last_name = 'Marshall'
+job = 'Trainer'
+country = 'India'
 sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
 print(sentence) # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
 

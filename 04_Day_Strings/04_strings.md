@@ -1,18 +1,5 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 4 - Strings</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-
-<sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
-</sub>
-
-</div>
 
 [<< Day 3](../03_Day_Operators/03_operators.md) | [Day 5 >>](../05_Day_Lists/05_lists.md)
 
@@ -58,13 +45,13 @@ print(sentence)
 Multiline string is created by using triple single (''') or triple double quotes ("""). See the example below.
 
 ```py
-multiline_string = '''I am a teacher and enjoy teaching.
+multiline_string = '''I am a trainer and enjoy training to people.
 I didn't find anything as rewarding as empowering people.
 That is why I created 30 days of python.'''
 print(multiline_string)
 
 # Another way of doing the same thing
-multiline_string = """I am a teacher and enjoy teaching.
+multiline_string = """I am a trainer and enjoy traing to people.
 I didn't find anything as rewarding as empowering people.
 That is why I created 30 days of python."""
 print(multiline_string)
@@ -75,11 +62,11 @@ print(multiline_string)
 We can connect strings together. Merging or connecting strings is called concatenation. See the example below:
 
 ```py
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Kalai'
+last_name = 'Marshall'
 space = ' '
 full_name = first_name  +  space + last_name
-print(full_name) # Asabeneh Yetayeh
+print(full_name) # Kalai Marshall
 # Checking the length of a string using len() built-in function
 print(len(first_name))  # 8
 print(len(last_name))   # 7
@@ -135,8 +122,8 @@ The "%" operator is used to format a set of variables enclosed in a "tuple" (a f
 
 ```py
 # Strings only
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Kalai'
+last_name = 'Marshall'
 language = 'Python'
 formated_string = 'I am %s %s. I teach %s' %(first_name, last_name, language)
 print(formated_string)
@@ -158,8 +145,8 @@ This formatting is introduced in Python version 3.
 
 ```py
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Kalai'
+last_name = 'Marshall'
 language = 'Python'
 formated_string = 'I am {} {}. I teach {}'.format(first_name, last_name, language)
 print(formated_string)
@@ -344,13 +331,13 @@ print(challenge.rfind('th')) # 17
    More about string formatting check this [link](https://www.programiz.com/python-programming/methods/string/format)
 
 ```py
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Kalai'
+last_name = 'Marshall'
 age = 250
-job = 'teacher'
-country = 'Finland'
+job = 'Trainer'
+country = 'India'
 sentence = 'I am {} {}. I am a {}. I am {} years old. I live in {}.'.format(first_name, last_name, age, job, country)
-print(sentence) # I am Asabeneh Yetayeh. I am 250 years old. I am a teacher. I live in Finland.
+print(sentence) # I am Kalai Marshall. I am 250 years old. I am a Trainer. I live in India.
 
 radius = 10
 pi = 3.14
@@ -575,7 +562,7 @@ print(challenge.startswith('thirty')) # False
 34. Use a tab escape sequence to write the following lines.
     ```py
     Name      Age     Country   City
-    Asabeneh  250     Finland   Helsinki
+    Kalai.    250     India.    Chennai
     ```
 35. Use the string formatting method to display the following:
 

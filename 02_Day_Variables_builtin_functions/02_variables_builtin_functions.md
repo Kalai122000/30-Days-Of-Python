@@ -26,10 +26,6 @@ In Python we have lots of built-in functions. Built-in functions are globally av
 
 ![Built-in Functions](../images/builtin-functions.png)
 
-Let us open the Python shell and start using some of the most common built-in functions.
-
-![Built-in functions](../images/builtin-functions_practice.png)
-
 ## Variables
 
 Variables store data in a computer memory. Mnemonic variables are recommended to use in many programming languages. A mnemonic variable is a variable name that can be easily remembered and associated. A variable refers to a memory address in which data is stored.

@@ -1,18 +1,5 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 10 - Loops</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-
-<sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small> Second Edition: July, 2021</small>
-</sub>
-</div>
-
 [<< Day 9](../09_Day_Conditionals/09_conditionals.md) | [Day 11 >>](../11_Day_Functions/11_functions.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
@@ -204,11 +191,11 @@ for iterator in dct:
 
 ```py
 person = {
-    'first_name':'Asabeneh',
-    'last_name':'Yetayeh',
+    'first_name':'Kalai',
+    'last_name':'Marshall',
     'age':250,
-    'country':'Finland',
-    'is_marred':True,
+    'country':'India',
+    'is_marred':False,
     'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address':{
         'street':'Space street',
@@ -331,11 +318,11 @@ for x in y:
 
 ```py
 person = {
-    'first_name': 'Asabeneh',
-    'last_name': 'Yetayeh',
+    'first_name': 'Kalai',
+    'last_name': 'Marshall',
     'age': 250,
-    'country': 'Finland',
-    'is_marred': True,
+    'country': 'India',
+    'is_marred': False,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': 'Space street',
@@ -446,15 +433,6 @@ for number in range(6):
     ```sh
     The sum of all evens is 2550. And the sum of all odds is 2500.
     ```
-
-### Exercises: Level 3
-
-1. Go to the data folder and use the [countries.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) file. Loop through the countries and extract all the countries containing the word _land_.
-1. This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
-2. Go to the data folder and use the [countries_data.py](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file. 
-   1. What are the total number of languages in the data
-   2. Find the ten most spoken languages from the data
-   3. Find the 10 most populated countries in the world
 
 🎉 CONGRATULATIONS ! 🎉
 

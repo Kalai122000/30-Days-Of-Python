@@ -1,16 +1,6 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 26 - Python for web </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-
-  <sub>Author:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small>Second Edition: July, 2021</small>
-  </sub>
+  
 </div>
 </div>
 
@@ -83,20 +73,20 @@ pip install virtualenv
 Step 2:
 
 ```sh
-asabeneh@Asabeneh:~/Desktop$ mkdir python_for_web
-asabeneh@Asabeneh:~/Desktop$ cd python_for_web/
-asabeneh@Asabeneh:~/Desktop/python_for_web$ virtualenv venv
-asabeneh@Asabeneh:~/Desktop/python_for_web$ source venv/bin/activate
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip install Flask
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
+kalaiyarasan@Kalaiyarasan:~/Desktop$ mkdir python_for_web
+kalaiyarasan@Kalaiyarasan:~/Desktop$ cd python_for_web/
+kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ virtualenv ve
+kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ source venv/bin/activate
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ pip freeze
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ pip install Flask
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ pip freeze
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$
 ```
 
 We created a project director named python_for_web. Inside the project we created a virtual environment *venv* which could be any name but I prefer to call it _venv_. Then we activated the virtual environment. We used pip freeze to check the installed packages in the project directory. The result of pip freeze was empty because a package was not installed yet.
@@ -501,19 +491,19 @@ After installing heroku write the following command
 #### Login to Heroku
 
 ```sh
-asabeneh@Asabeneh:~$ heroku login
+kalaiyarasan@Kalaiyarasan:~$ heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 ```
 
 Let's see the result by clicking any key from the keyboard. When you press any key from you keyboard it will open the heroku login page and click the login page. Then you will local machine will be connected to the remote heroku server. If you are connected to remote server, you will see this.
 
 ```sh
-asabeneh@Asabeneh:~$ heroku login
+kalaiyarasan@Kalaiyarasan:~$ heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 Opening browser to https://cli-auth.heroku.com/auth/browser/be12987c-583a-4458-a2c2-ba2ce7f41610
 Logging in... done
-Logged in as asabeneh@gmail.com
-asabeneh@Asabeneh:~$
+Logged in as kalaiyarasanm43@@gmail.com
+kalaiyarasan@Kalaiyarasan:~$
 ```
 
 #### Create requirements and Procfile
@@ -524,27 +514,27 @@ Before we push our code to remote server, we need requirements
 - Procfile
 
 ```sh
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ pip freeze
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ touch requirements.txt
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ pip freeze > requirements.txt
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ cat requirements.txt
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ touch requirements.txt
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ pip freeze > requirements.txt
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ cat requirements.txt
 Click==7.0
 Flask==1.1.1
 itsdangerous==1.1.0
 Jinja2==2.10.3
 MarkupSafe==1.1.1
 Werkzeug==0.16.0
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ touch Procfile
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$ ls
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ touch Procfile
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$ ls
 Procfile          env/              static/
 app.py            requirements.txt  templates/
-(env) asabeneh@Asabeneh:~/Desktop/python_for_web$
+(env) kalaiyarasan@Kalaiyarasan:~/Desktop/python_for_web$
 ```
 
 The Procfile will have the command which run the application in the web server in our case on Heroku.

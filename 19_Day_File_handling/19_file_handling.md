@@ -1,15 +1,6 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 19 - File Handling </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-<sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
-</sub>
+  
 </div>
 
 [<< Day 18](../18_Day_Regular_expressions/18_regular_expressions.md) | [Day 20 >>](../20_Day_Python_package_manager/20_python_package_manager.md)
@@ -218,19 +209,19 @@ _Example:_
 ```py
 # dictionary
 person_dct= {
-    "name":"Asabeneh",
-    "country":"Finland",
-    "city":"Helsinki",
+    "name":"Kalai",
+    "country":"India",
+    "city":"Chennai",
     "skills":["JavaScrip", "React","Python"]
 }
 # JSON: A string form a dictionary
-person_json = "{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}"
+person_json = "{'name': 'Kalai', 'country': 'India', 'city': 'Chennai', 'skills': ['JavaScrip', 'React', 'Python']}"
 
 # we use three quotes and make it multiple line to make it more readable
 person_json = '''{
-    "name":"Asabeneh",
-    "country":"Finland",
-    "city":"Helsinki",
+    "name":"Kalai",
+    "country":"India",
+    "city":"Chennai",
     "skills":["JavaScrip", "React","Python"]
 }'''
 ```
@@ -243,9 +234,9 @@ To change a JSON to a dictionary, first we import the json module and then we us
 import json
 # JSON
 person_json = '''{
-    "name": "Asabeneh",
-    "country": "Finland",
-    "city": "Helsinki",
+    "name": "Kalai",
+    "country": "India",
+    "city": "Chennai",
     "skills": ["JavaScrip", "React", "Python"]
 }'''
 # let's change JSON to dictionary
@@ -258,8 +249,8 @@ print(person_dct['name'])
 ```sh
 # output
 <class 'dict'>
-{'name': 'Asabeneh', 'country': 'Finland', 'city': 'Helsinki', 'skills': ['JavaScrip', 'React', 'Python']}
-Asabeneh
+{'name': 'Kalai', 'country': 'India', 'city': 'Chennai', 'skills': ['JavaScrip', 'React', 'Python']}
+Kalai
 ```
 
 ### Changing Dictionary to JSON
@@ -270,9 +261,9 @@ To change a dictionary to a JSON we use _dumps_ method from the json module.
 import json
 # python dictionary
 person = {
-    "name": "Asabeneh",
-    "country": "Finland",
-    "city": "Helsinki",
+    "name": "Kalai",
+    "country": "India",
+    "city": "Chennai",
     "skills": ["JavaScrip", "React", "Python"]
 }
 # let's convert it to  json
@@ -287,9 +278,9 @@ print(person_json)
 # JSON does not have type, it is a string type.
 <class 'str'>
 {
-    "name": "Asabeneh",
-    "country": "Finland",
-    "city": "Helsinki",
+    "name": "Kalai",
+    "country": "India",
+    "city": "Chennai",
     "skills": [
         "JavaScrip",
         "React",
@@ -306,9 +297,9 @@ We can also save our data as a json file. Let us save it as a json file using th
 import json
 # python dictionary
 person = {
-    "name": "Asabeneh",
-    "country": "Finland",
-    "city": "Helsinki",
+    "name": "Kalai",
+    "country": "India",
+    "city": "Chennai",
     "skills": ["JavaScrip", "React", "Python"]
 }
 with open('./files/json_example.json', 'w', encoding='utf-8') as f:
@@ -325,7 +316,7 @@ CSV stands for comma separated values. CSV is a simple file format used to store
 
 ```csv
 "name","country","city","skills"
-"Asabeneh","Finland","Helsinki","JavaScript"
+"Kalai","India","Chennai","JavaScript"
 ```
 
 **Example:**
@@ -341,7 +332,7 @@ with open('./files/csv_example.csv') as f:
             line_count += 1
         else:
             print(
-                f'\t{row[0]} is a teachers. He lives in {row[1]}, {row[2]}.')
+                f'\t{row[0]} is a trainer. He lives in {row[1]}, {row[2]}.')
             line_count += 1
     print(f'Number of lines:  {line_count}')
 ```
@@ -349,7 +340,7 @@ with open('./files/csv_example.csv') as f:
 ```sh
 # output:
 Column names are :name, country, city, skills
-        Asabeneh is a teacher. He lives in Finland, Helsinki.
+        Kalai is a trainer. He lives in Chennai, India.
 Number of lines:  2
 ```
 
@@ -372,9 +363,9 @@ XML is another structured data format which looks like HTML. In XML the tags are
 ```xml
 <?xml version="1.0"?>
 <person gender="female">
-  <name>Asabeneh</name>
-  <country>Finland</country>
-  <city>Helsinki</city>
+  <name>Kalai</name>
+  <country>India</country>
+  <city>Chennai</city>
   <skills>
     <skill>JavaScrip</skill>
     <skill>React</skill>
@@ -497,18 +488,6 @@ field: skills
     (6, 'of'),
     (5, 'and')]
 ```
-
-6. Use the function, find_most_frequent_words to find:
-   a) The ten most frequent words used in [Obama's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/obama_speech.txt)
-   b) The ten most frequent words used in [Michelle's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt)
-   c) The ten most frequent words used in [Trump's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/donald_speech.txt)
-   d) The ten most frequent words used in [Melina's speech](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt)
-7. Write a python application that checks similarity between two texts. It takes a file or a string as a parameter and it will evaluate the similarity of the two texts. For instance check the similarity between the transcripts of [Michelle's](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/michelle_obama_speech.txt) and [Melina's](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/melina_trump_speech.txt) speech. You may need a couple of functions, function to clean the text(clean_text), function to remove support words(remove_support_words) and finally to check the similarity(check_text_similarity). List of [stop words](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/stop_words.py) are in the data directory
-8. Find the 10 most repeated words in the romeo_and_juliet.txt
-9. Read the [hacker news csv](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/hacker_news.csv) file and find out:
-   a) Count the number of lines containing python or Python
-   b) Count the number lines containing JavaScript, javascript or Javascript
-   c) Count the number lines containing Java and not JavaScript
 
 ### Exercises: Level 3
 

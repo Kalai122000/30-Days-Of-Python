@@ -1,16 +1,5 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 14 - Higher Order Functions</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
-
-  <sub>Author:
-  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-  <small>Second Edition: July, 2021</small>
-  </sub>
 </div>
 </div>
 
@@ -203,7 +192,7 @@ def print_full_name(first_name, last_name, country):
     print("I am {} {}. I love to teach.".format(
         first_name, last_name, country))
 
-print_full_name("Asabeneh", "Yetayeh",'Finland')
+print_full_name("Kalai", "Marshall",'Finland')
 ```
 
 ## Built-in Higher Order Functions
@@ -244,17 +233,17 @@ print(list(numbers_int))    # [1, 2, 3, 4, 5]
 **Example:3**
 
 ```py
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+names = ['Kalai', 'Selva', 'Pravin', 'Naveen']  # iterable
 
 def change_to_upper(name):
     return name.upper()
 
 names_upper_cased = map(change_to_upper, names)
-print(list(names_upper_cased))    # ['ASABENEH', 'LIDIYA', 'ERMIAS', 'ABRAHAM']
+print(list(names_upper_cased))    # ['KALAI', 'SELVA', 'PRAVIN', 'NAVEEN']
 
 # Let us apply it with a lambda function
 names_upper_cased = map(lambda name: name.upper(), names)
-print(list(names_upper_cased))    # ['ASABENEH', 'LIDIYA', 'ERMIAS', 'ABRAHAM']
+print(list(names_upper_cased))    # ['KALAI', 'SELVA', 'PRAVIN', 'NAVEEN']
 ```
 
 What actually map does is iterating over a list. For instance, it changes the names to upper case and returns a new list.
@@ -299,14 +288,14 @@ print(list(odd_numbers))       # [1, 3, 5]
 
 ```py
 # Filter long name
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # iterable
+names = ['Kalai', 'Lidiya', 'Ermias', 'Abraham']  # iterable
 def is_name_long(name):
     if len(name) > 7:
         return True
     return False
 
 long_names = filter(is_name_long, names)
-print(list(long_names))         # ['Asabeneh']
+print(list(long_names))         # ['Kalai']
 ```
 
 ### Python - Reduce Function
@@ -327,7 +316,7 @@ print(total)    # 15
 
 ```py
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+names = ['Pravin', 'Mani', 'Selva', 'Uvaraj']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -353,17 +342,10 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 1. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
 1. Use reduce to sum all the numbers in the numbers list.
 1. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
-1. Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the [countries list](https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries.py) in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
+1. Declare a function called categorize_countries that returns a list of countries with some common pattern.
 1. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
 2. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
 1. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
-
-### Exercises: Level 3
-
-1. Use the countries_data.py (https://github.com/Asabeneh/30-Days-Of-Python/blob/master/data/countries-data.py) file and follow the tasks below:
-   - Sort countries by name, by capital, by population
-   - Sort out the ten most spoken languages by location.
-   - Sort out the ten most populated countries.
 
 🎉 CONGRATULATIONS ! 🎉
 

@@ -1,16 +1,6 @@
 <div align="center">
   <h1> 30 Days Of Python: Day 20 - PIP </h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
-  </a>
 
-<sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
-<small>Second Edition: July, 2021</small>
-</sub>
 </div>
 
 [<< Day 19](../19_Day_File_handling/19_file_handling.md) | [Day 21 >>](../21_Day_Classes_and_objects/21_classes_and_objects.md)
@@ -46,7 +36,7 @@ In programming, we do not have to write every utility program, instead we instal
 If you did not install pip, let us install it now. Go to your terminal or command prompt and copy and paste this:
 
 ```sh
-asabeneh@Asabeneh:~$ pip install pip
+kalaiyarasan@Kalaiyarasan:~$ pip install pip
 ```
 
 Check if pip is installed by writing
@@ -56,7 +46,7 @@ pip --version
 ```
 
 ```py
-asabeneh@Asabeneh:~$ pip --version
+kalaiyarasan@Kalaiyarasan:~$ pip --version
 pip 21.1.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.9.6)
 ```
 
@@ -75,13 +65,13 @@ Let us try to install _numpy_, called numeric python. It is one of the most popu
   - useful linear algebra, Fourier transform, and random number capabilities
 
 ```sh
-asabeneh@Asabeneh:~$ pip install numpy
+kalaiyarasan@Kalaiyarasan:~$ pip install numpy
 ```
 
 Let us start using numpy. Open your python interactive shell, write python and then import numpy as follows:
 
 ```py
-asabeneh@Asabeneh:~$ python
+kalaiyarasan@Kalaiyarasan:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -104,11 +94,11 @@ array([3, 4, 5, 6, 7])
 Pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Let us install the big brother of numpy, _pandas_:
 
 ```sh
-asabeneh@Asabeneh:~$ pip install pandas
+kalaiyarasan@Kalaiyarasan:~$ pip install pandas
 ```
 
 ```py
-asabeneh@Asabeneh:~$ python
+kalaiyarasan@Kalaiyarasan:~$ python
 Python 3.9.6 (default, Jun 28 2021, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -125,9 +115,7 @@ import webbrowser # web browser module to open websites
 # list of urls: python
 url_lists = [
     'http://www.python.org',
-    'https://www.linkedin.com/in/asabeneh/',
-    'https://github.com/Asabeneh',
-    'https://twitter.com/Asabeneh',
+    'https://github.com/Kalai122000',
 ]
 
 # opens the above list of websites in a different tab
@@ -160,7 +148,7 @@ pip show packagename
 ```
 
 ```sh
-asabeneh@Asabeneh:~$ pip show pandas
+kalaiyarasan@Kalaiyarasan:~$ pip show pandas
 Name: pandas
 Version: 1.2.3
 Summary: Powerful data structures for data analysis, time series, and statistics
@@ -176,7 +164,7 @@ Required-by:
 If we want even more details, just add --verbose
 
 ```sh
-asabeneh@Asabeneh:~$ pip show --verbose pandas
+kalaiyarasan@Kalaiyarasan:~$ pip show --verbose pandas
 Name: pandas
 Version: 1.2.3
 Summary: Powerful data structures for data analysis, time series, and statistics
@@ -212,7 +200,7 @@ Entry-points:
 Generate installed Python packages with their version and the output is suitable to use it in a requirements file. A requirements.txt file is a file that should contain all the installed Python packages in a Python project.
 
 ```sh
-asabeneh@Asabeneh:~$ pip freeze
+kalaiyarasan@Kalaiyarasan:~$ pip freeze
 docutils==0.11
 Jinja2==2.7.2
 MarkupSafe==0.19
@@ -230,7 +218,7 @@ API stands for Application Program Interface. It is a means to exchange structur
 Let us install _requests_:
 
 ```py
-asabeneh@Asabeneh:~$ pip install requests
+kalaiyarasan@Kalaiyarasan:~$ pip install requests
 ```
 
 We will see _get_, _status_code_, _headers_, _text_ and _json_ methods in _requests_ module:
@@ -382,8 +370,7 @@ The folder structure of your package should look like this:
 Now let's open the python interactive shell and try the package we have created:
 
 ```sh
-asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ python
-Python 3.9.6 (default, Jun 28 2021, 15:26:21)
+Python 3.9.6 (default,  1, 15:26:21)
 [Clang 11.0.0 (clang-1100.0.33.8)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from mypackage import arithmetics
@@ -400,8 +387,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> arithmetics.power(5, 3)
 125
 >>> from mypackage import greet
->>> greet.greet_person('Asabeneh', 'Yetayeh')
-'Asabeneh Yetayeh, welcome to 30DaysOfPython Challenge!'
+>>> greet.greet_person('Kalai', 'Marshall')
+'Kalai Marshall, welcome to 30DaysOfPython Challenge!'
 >>>
 ```
 

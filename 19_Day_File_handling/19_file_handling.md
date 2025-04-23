@@ -362,7 +362,7 @@ XML is another structured data format which looks like HTML. In XML the tags are
 
 ```xml
 <?xml version="1.0"?>
-<person gender="female">
+<person gender="male">
   <name>Kalai</name>
   <country>India</country>
   <city>Chennai</city>

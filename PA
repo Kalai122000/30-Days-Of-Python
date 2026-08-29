@@ -1,0 +1,111 @@
+import java.util.*;
+
+public class PrimsAlgorithm {
+
+    // Class to represent an edge (neighbor, weight)
+    static class Edge {
+        int destination;
+        int weight;
+
+        Edge(int destination, int weight) {
+            this.destination = destination;
+            this.weight = weight;
+        }
+    }
+
+    // Graph represented as adjacency list
+    static class Graph {
+        int vertices;
+        List<List<Edge>> adjList;
+
+        Graph(int vertices) {
+            this.vertices = vertices;
+            adjList = new ArrayList<>();
+            for (int i = 0; i < vertices; i++) {
+                adjList.add(new ArrayList<>());
+            }
+        }
+
+        // Add edge for an undirected graph
+        void addEdge(int src, int dest, int weight) {
+            adjList.get(src).add(new Edge(dest, weight));
+            adjList.get(dest).add(new Edge(src, weight)); // undirected
+        }
+    }
+
+    // Node used in the priority queue
+    static class Node {
+        int vertex;
+        int key;
+
+        Node(int vertex, int key) {
+            this.vertex = vertex;
+            this.key = key;
+        }
+    }
+
+    public static void primMST(Graph graph) {
+        int V = graph.vertices;
+
+        int[] parent = new int[V];      // Stores the MST
+        int[] key = new int[V];         // Minimum weight edge to reach vertex
+        boolean[] inMST = new boolean[V]; // Whether vertex is included in MST
+
+        Arrays.fill(key, Integer.MAX_VALUE);
+        Arrays.fill(parent, -1);
+
+        // Min-heap based on key value
+        PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparingInt(n -> n.key));
+
+        // Start from vertex 0
+        key[0] = 0;
+        pq.add(new Node(0, 0));
+
+        while (!pq.isEmpty()) {
+            Node current = pq.poll();
+            int u = current.vertex;
+
+            if (inMST[u]) continue; // Skip stale entries
+            inMST[u] = true;
+
+            // Explore neighbors
+            for (Edge edge : graph.adjList.get(u)) {
+                int v = edge.destination;
+                int weight = edge.weight;
+
+                if (!inMST[v] && weight < key[v]) {
+                    key[v] = weight;
+                    parent[v] = u;
+                    pq.add(new Node(v, key[v]));
+                }
+            }
+        }
+
+        printMST(parent, key, V);
+    }
+
+    static void printMST(int[] parent, int[] key, int V) {
+        System.out.println("Edge \tWeight");
+        int totalWeight = 0;
+        for (int i = 1; i < V; i++) {
+            System.out.println(parent[i] + " - " + i + "\t" + key[i]);
+            totalWeight += key[i];
+        }
+        System.out.println("Total weight of MST: " + totalWeight);
+    }
+
+    public static void main(String[] args) {
+        int V = 5;
+        Graph graph = new Graph(V);
+
+        graph.addEdge(0, 1, 2);
+        graph.addEdge(0, 3, 6);
+        graph.addEdge(1, 2, 3);
+        graph.addEdge(1, 3, 8);
+        graph.addEdge(1, 4, 5);
+        graph.addEdge(2, 4, 7);
+        graph.addEdge(3, 4, 9);
+
+        primMST(graph);
+    }
+}
